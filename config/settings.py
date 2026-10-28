@@ -137,6 +137,13 @@ STORAGES = {
     },
 }
 
+# Compatibility for django-cloudinary-storage's collectstatic command.
+STATICFILES_STORAGE = (
+    "whitenoise.storage.CompressedManifestStaticFilesStorage"
+    if not DEBUG
+    else "django.contrib.staticfiles.storage.StaticFilesStorage"
+)
+
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
 
