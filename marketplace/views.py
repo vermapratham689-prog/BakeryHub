@@ -171,15 +171,36 @@ def order_status(request, order_id):
 
 @login_required
 def add_review(request, shop_id):
-    shop = get_object_or_404(Shop,pk=shop_id)
-    eligible = Order.objects.filter(customer=request.user,shop=shop).exclude(status='Cancelled').exists()
-    if not eligible:
-        messages.error(request,'Place an order from this bakery before reviewing it.'); return redirect('shop_detail',shop_id=shop.id)
-    form = ReviewForm(request.POST or None)
-    if request.method == 'POST' and form.is_valid():
-        review, created = Review.objects.update_or_create(customer=request.user,shop=shop,product=None,defaults={'rating':form.cleaned_data['rating'],'comment':form.cleaned_data['comment']})
-        messages.success(request,'Thank you for your review!'); return redirect('shop_detail',shop_id=shop.id)
-    return render(request,'marketplace/form_page.html',{'form':form,'title':f'Review {shop.name}','button':'Submit review'})
+    """Create or update the signed-in customer's review for a bakery."""
+    shop = get_object_or_404(Shop, pk=shop_id)
+    existing_review = Review.objects.filter(
+        customer=request.user, shop=shop, product__isnull=True
+    ).first()
+
+    if request.method == "POST":
+        form = ReviewForm(request.POST, instance=existing_review)
+        if form.is_valid():
+            review = form.save(commit=False)
+            review.customer = request.user
+            review.shop = shop
+            review.product = None
+            review.save()
+            messages.success(request, "Thank you! Your review has been published.")
+            return redirect("shop_detail", shop_id=shop.id)
+        messages.error(request, "Please correct the errors below and submit your review again.")
+    else:
+        form = ReviewForm(instance=existing_review)
+
+    return render(
+        request,
+        "marketplace/form_page.html",
+        {
+            "form": form,
+            "title": f"{'Edit your review' if existing_review else 'Review'} — {shop.name}",
+            "button": "Update review" if existing_review else "Submit review",
+            "review_shop": shop,
+        },
+    )
 
 @login_required
 def offer_add(request):

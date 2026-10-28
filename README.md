@@ -73,3 +73,16 @@ This starter is configured for local development (`DEBUG=True`, development `SEC
 7. Deploy. After it starts, create an admin user using Render Shell: `python manage.py createsuperuser`.
 
 The local SQLite database is intentionally not included in the deployment source archive. Existing local data does not automatically transfer to PostgreSQL. Uploaded media stored on the service filesystem is not durable across redeploys; use persistent/object storage if you need production uploads to persist.
+
+
+## Production image uploads on Render
+
+Render service filesystems are ephemeral unless a persistent disk is configured. This project supports Cloudinary for durable uploaded product images and bakery logos.
+
+1. Create a Cloudinary account and copy its `CLOUDINARY_URL` from the dashboard.
+2. In Render, open the BakeryHub Web Service → Environment → Add Environment Variable.
+3. Add `CLOUDINARY_URL` as the key and paste the private Cloudinary URL as the value. Do not commit it to GitHub.
+4. Redeploy the service. The app automatically switches uploaded media to Cloudinary when this variable exists.
+5. Re-upload existing product images and bakery logos from the bakery dashboard; images previously saved on the Render filesystem are not automatically copied to Cloudinary.
+
+The navbar displays a cart item count. Review forms allow a signed-in user to create or update one bakery review, and anonymous visitors are prompted to log in first.
