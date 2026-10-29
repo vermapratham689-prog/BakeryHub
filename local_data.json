@@ -1,1103 +1,1103 @@
 [
-{
-  "model": "auth.user",
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$4of9Wj4IDdE3yEp5NVNKOO$uq/gtYFS83hMe3POaYBLhvVFjJ5eAODvyyMrKXBJgf4=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "demo_baker",
-    "first_name": "",
-    "last_name": "",
-    "email": "bloom@example.test",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2026-10-28T04:34:11.256Z",
-    "groups": [],
-    "user_permissions": []
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$4of9Wj4IDdE3yEp5NVNKOO$uq/gtYFS83hMe3POaYBLhvVFjJ5eAODvyyMrKXBJgf4=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "demo_baker",
+      "first_name": "",
+      "last_name": "",
+      "email": "bloom@example.test",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-28T04:34:11.256Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$xg2dKER5n1IXS8xF738cXq$MjSQeKI2lKOWZWhgrsjiGxGNS82qom31irrqVAT77j4=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "demo_customer",
+      "first_name": "",
+      "last_name": "",
+      "email": "customer@example.test",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-28T04:34:11.431Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$L5MFKawJqHXRTRaEp2nCKM$hrkmVDmuYoVxkyEUYekTe7JSmAXTlyUsKPzgC9Wv44o=",
+      "last_login": null,
+      "is_superuser": true,
+      "username": "pratham",
+      "first_name": "",
+      "last_name": "",
+      "email": "paramverma835@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2026-10-28T04:34:56.223Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$piVBtVxeJTJJ1hGbHPi3z3$tZQOBBhzF86R77sAhKk3mkjaGhwh2mWBpucmK/oftTQ=",
+      "last_login": "2026-10-28T04:36:10.991Z",
+      "is_superuser": false,
+      "username": "prathamverma",
+      "first_name": "",
+      "last_name": "",
+      "email": "kakakak@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-28T04:36:10.847Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$I6YCAbzip1EyO2M1JgIKKd$8YoxBUVHnyLdOFyxY+iz/7vniKfYalJBWsndYdrumeo=",
+      "last_login": "2026-10-28T06:17:32.782Z",
+      "is_superuser": false,
+      "username": "bakery4u",
+      "first_name": "",
+      "last_name": "",
+      "email": "bakery4u@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-28T06:17:32.638Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$m9XKVs6OfFMAx3FSpDaeND$yLE+8QbyUUqWDHQBl2zOze7sOA3b7FBS/u9tbfr0tEk=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "demo_roastroom",
+      "first_name": "",
+      "last_name": "",
+      "email": "roastroom@example.test",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-29T13:32:19.048Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$noXFtIbP0STfvvaKTPZZwH$4wF1mQZaBVRP6gnuoUTyKJu37fhupyWqrYPcRBieCeA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "demo_bubblebay",
+      "first_name": "",
+      "last_name": "",
+      "email": "bubblebay@example.test",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-29T13:32:19.231Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$J4BRmasUNUlHetiOLrbtCW$TVeO2Vko5s45s5NTbVLQmZD10j/tK5qwdm3O4+j2SmU=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "demo_mocha",
+      "first_name": "",
+      "last_name": "",
+      "email": "mochahouse@example.test",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-29T13:32:19.433Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$L7o5ypp8IfbIw4ZYVPXjpe$i1jr5CGHXejJqiFgDLd93Ml6FOZCFzvz3zUA6KHuTvU=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "demo_cafecorner",
+      "first_name": "",
+      "last_name": "",
+      "email": "cornercup@example.test",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-29T13:32:19.628Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$2QB9wGKubkdPqzOyzIRQVt$DIHklvE6PK6x4955Vn9BLYI1V7/WEyKrnuEU2E8sQ4o=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "demo_cafe_reserve",
+      "first_name": "",
+      "last_name": "",
+      "email": "reserve@example.test",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-29T15:34:11.621Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$hydYg68DMkzq2N8V8Ewzzp$id9Cn/fXb1oXg/l8TYSbjy2qjllnhDFsPWx6kVeu0XU=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "demo_daily_grind",
+      "first_name": "",
+      "last_name": "",
+      "email": "dailygrind@example.test",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-29T15:34:11.831Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$yzk12yBk3j1hOdarkEVUI4$FITi9+PQLH3n8rNFaYB1gjbiRZ4wDLe1Q0CM+gNp9R0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "demo_frappe_house",
+      "first_name": "",
+      "last_name": "",
+      "email": "frappehouse@example.test",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-29T15:34:12.024Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$OjNOogHvQRdCG1Tw94r5lV$h+Bluqnf2sP1Zg/o5Tz/+0S5DJuPlHtYQeWc1tTwUAc=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "demo_boba_brew",
+      "first_name": "",
+      "last_name": "",
+      "email": "bobabrew@example.test",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-29T15:34:12.212Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "marketplace.shop",
+    "pk": 7,
+    "fields": {
+      "owner": [
+        "demo_cafe_reserve"
+      ],
+      "name": "CafÃ© Reserve",
+      "description": "A premium coffee bar for espresso classics, signature lattes, cold brew and cafÃ© sandwiches.",
+      "address": "Model Town, Ludhiana",
+      "phone": "9876543210",
+      "logo": "shop_logos/cafe_reserve.jpg",
+      "created_at": "2026-10-29T15:34:11.747Z"
+    }
+  },
+  {
+    "model": "marketplace.shop",
+    "pk": 8,
+    "fields": {
+      "owner": [
+        "demo_daily_grind"
+      ],
+      "name": "Daily Grind CafÃ©",
+      "description": "Your everyday stop for brewed coffee, refreshing iced drinks, teas and quick savoury bites.",
+      "address": "Sarabha Nagar, Ludhiana",
+      "phone": "9876543211",
+      "logo": "shop_logos/daily_grind.jpg",
+      "created_at": "2026-10-29T15:34:11.951Z"
+    }
+  },
+  {
+    "model": "marketplace.shop",
+    "pk": 9,
+    "fields": {
+      "owner": [
+        "demo_frappe_house"
+      ],
+      "name": "FrappÃ© House",
+      "description": "Blended coffee, creamy frappÃ©s, iced refreshers and sweet cafÃ© treats.",
+      "address": "Feroze Gandhi Market, Ludhiana",
+      "phone": "9876543212",
+      "logo": "shop_logos/frappe_house.jpg",
+      "created_at": "2026-10-29T15:34:12.141Z"
+    }
+  },
+  {
+    "model": "marketplace.shop",
+    "pk": 10,
+    "fields": {
+      "owner": [
+        "demo_boba_brew"
+      ],
+      "name": "Boba & Brew CafÃ©",
+      "description": "A modern tea and coffee spot for matcha, iced tea, refreshers, bubble tea and light bites.",
+      "address": "BRS Nagar, Ludhiana",
+      "phone": "9876543213",
+      "logo": "shop_logos/boba_brew.jpg",
+      "created_at": "2026-10-29T15:34:12.331Z"
+    }
+  },
+  {
+    "model": "marketplace.category",
+    "pk": 21,
+    "fields": {
+      "name": "Bakery Snacks",
+      "slug": "bakery-snacks"
+    }
+  },
+  {
+    "model": "marketplace.category",
+    "pk": 22,
+    "fields": {
+      "name": "Brewed Coffee",
+      "slug": "brewed-coffee"
+    }
+  },
+  {
+    "model": "marketplace.category",
+    "pk": 23,
+    "fields": {
+      "name": "Bubble Tea",
+      "slug": "bubble-tea"
+    }
+  },
+  {
+    "model": "marketplace.category",
+    "pk": 24,
+    "fields": {
+      "name": "Cold Coffee",
+      "slug": "cold-coffee"
+    }
+  },
+  {
+    "model": "marketplace.category",
+    "pk": 25,
+    "fields": {
+      "name": "Food",
+      "slug": "food"
+    }
+  },
+  {
+    "model": "marketplace.category",
+    "pk": 26,
+    "fields": {
+      "name": "FrappÃ©s",
+      "slug": "frappÃ©s"
+    }
+  },
+  {
+    "model": "marketplace.category",
+    "pk": 27,
+    "fields": {
+      "name": "Hot Coffee",
+      "slug": "hot-coffee"
+    }
+  },
+  {
+    "model": "marketplace.category",
+    "pk": 28,
+    "fields": {
+      "name": "Refreshers",
+      "slug": "refreshers"
+    }
+  },
+  {
+    "model": "marketplace.category",
+    "pk": 29,
+    "fields": {
+      "name": "Signature Coffee",
+      "slug": "signature-coffee"
+    }
+  },
+  {
+    "model": "marketplace.category",
+    "pk": 30,
+    "fields": {
+      "name": "Snacks",
+      "slug": "snacks"
+    }
+  },
+  {
+    "model": "marketplace.category",
+    "pk": 31,
+    "fields": {
+      "name": "Tea & Matcha",
+      "slug": "tea-and-matcha"
+    }
+  },
+  {
+    "model": "marketplace.category",
+    "pk": 32,
+    "fields": {
+      "name": "Tea & Refreshers",
+      "slug": "tea-and-refreshers"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 57,
+    "fields": {
+      "shop": 7,
+      "category": 27,
+      "name": "Espresso",
+      "description": "Rich espresso with a smooth crema.",
+      "price": "110.00",
+      "image": "products/espresso.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:11.752Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 58,
+    "fields": {
+      "shop": 7,
+      "category": 27,
+      "name": "CaffÃ¨ Americano",
+      "description": "Espresso balanced with hot water.",
+      "price": "140.00",
+      "image": "products/espresso.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:11.763Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 59,
+    "fields": {
+      "shop": 7,
+      "category": 27,
+      "name": "Cappuccino",
+      "description": "Espresso, steamed milk and airy foam.",
+      "price": "180.00",
+      "image": "products/cappuccino.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:11.770Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 60,
+    "fields": {
+      "shop": 7,
+      "category": 27,
+      "name": "CaffÃ¨ Latte",
+      "description": "Espresso with silky steamed milk.",
+      "price": "190.00",
+      "image": "products/latte.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:11.775Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 61,
+    "fields": {
+      "shop": 7,
+      "category": 27,
+      "name": "Flat White",
+      "description": "Espresso with finely textured milk.",
+      "price": "200.00",
+      "image": "products/latte.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:11.781Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 62,
+    "fields": {
+      "shop": 7,
+      "category": 29,
+      "name": "Caramel Macchiato",
+      "description": "Vanilla milk, espresso and caramel drizzle.",
+      "price": "240.00",
+      "image": "products/caramel_macchiato.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:11.789Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 63,
+    "fields": {
+      "shop": 7,
+      "category": 29,
+      "name": "CaffÃ¨ Mocha",
+      "description": "Espresso, chocolate and steamed milk.",
+      "price": "230.00",
+      "image": "products/mocha_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:11.793Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 64,
+    "fields": {
+      "shop": 7,
+      "category": 29,
+      "name": "Vanilla Latte",
+      "description": "Classic latte with vanilla flavour.",
+      "price": "220.00",
+      "image": "products/latte.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:11.799Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 65,
+    "fields": {
+      "shop": 7,
+      "category": 24,
+      "name": "Cold Brew",
+      "description": "Slow-steeped coffee served over ice.",
+      "price": "210.00",
+      "image": "products/cold_brew.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:11.804Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 66,
+    "fields": {
+      "shop": 7,
+      "category": 24,
+      "name": "Iced Americano",
+      "description": "Espresso and chilled water over ice.",
+      "price": "160.00",
+      "image": "products/espresso.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:11.810Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 67,
+    "fields": {
+      "shop": 7,
+      "category": 25,
+      "name": "Classic Grilled Cheese Sandwich",
+      "description": "Toasted bread with melted cheese.",
+      "price": "190.00",
+      "image": "products/sandwich.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:11.814Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 68,
+    "fields": {
+      "shop": 7,
+      "category": 25,
+      "name": "Spinach & Corn Sandwich",
+      "description": "Grilled sandwich with spinach, corn and cheese.",
+      "price": "210.00",
+      "image": "products/sandwich.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:11.820Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 69,
+    "fields": {
+      "shop": 8,
+      "category": 22,
+      "name": "Pike-Style Brewed Coffee",
+      "description": "Balanced medium-roast brewed coffee; independently named menu item.",
+      "price": "130.00",
+      "image": "products/latte.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:11.956Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 70,
+    "fields": {
+      "shop": 8,
+      "category": 22,
+      "name": "CaffÃ¨ Misto",
+      "description": "Fresh brewed coffee topped with steamed milk.",
+      "price": "160.00",
+      "image": "products/iced_latte.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:11.960Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 71,
+    "fields": {
+      "shop": 8,
+      "category": 27,
+      "name": "Cortado",
+      "description": "Espresso softened with a small amount of warm milk.",
+      "price": "170.00",
+      "image": "products/espresso.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:11.965Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 72,
+    "fields": {
+      "shop": 8,
+      "category": 27,
+      "name": "Hazelnut Latte",
+      "description": "Espresso and steamed milk with hazelnut flavour.",
+      "price": "220.00",
+      "image": "products/latte.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:11.969Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 73,
+    "fields": {
+      "shop": 8,
+      "category": 29,
+      "name": "White Chocolate Mocha",
+      "description": "Espresso with white chocolate and steamed milk.",
+      "price": "250.00",
+      "image": "products/mocha_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:11.974Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 74,
+    "fields": {
+      "shop": 8,
+      "category": 24,
+      "name": "Iced Latte",
+      "description": "Espresso and milk served chilled.",
+      "price": "200.00",
+      "image": "products/iced_latte.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:11.980Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 75,
+    "fields": {
+      "shop": 8,
+      "category": 24,
+      "name": "Vanilla Sweet Cream Cold Brew",
+      "description": "Cold brew with a lightly sweet cream topping.",
+      "price": "240.00",
+      "image": "products/cold_brew.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:11.986Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 76,
+    "fields": {
+      "shop": 8,
+      "category": 32,
+      "name": "Iced Peach Tea",
+      "description": "Chilled tea with peach flavour.",
+      "price": "170.00",
+      "image": "products/iced_latte.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:11.992Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 77,
+    "fields": {
+      "shop": 8,
+      "category": 32,
+      "name": "Matcha Latte",
+      "description": "Green tea matcha blended with milk.",
+      "price": "230.00",
+      "image": "products/matcha_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:11.998Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 78,
+    "fields": {
+      "shop": 8,
+      "category": 32,
+      "name": "Hot Chocolate",
+      "description": "Creamy chocolate drink topped with foam.",
+      "price": "190.00",
+      "image": "products/mocha_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.004Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 79,
+    "fields": {
+      "shop": 8,
+      "category": 25,
+      "name": "Paneer Tikka Sandwich",
+      "description": "Toasted sandwich with paneer tikka filling.",
+      "price": "230.00",
+      "image": "products/sandwich.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.009Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 80,
+    "fields": {
+      "shop": 8,
+      "category": 21,
+      "name": "Butter Croissant",
+      "description": "Flaky, buttery croissant.",
+      "price": "140.00",
+      "image": "products/croissant.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.013Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 81,
+    "fields": {
+      "shop": 9,
+      "category": 26,
+      "name": "Coffee FrappÃ©",
+      "description": "Ice-blended coffee with a creamy finish.",
+      "price": "250.00",
+      "image": "products/caramel_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.147Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 82,
+    "fields": {
+      "shop": 9,
+      "category": 26,
+      "name": "Caramel FrappÃ©",
+      "description": "Blended coffee with caramel flavour and drizzle.",
+      "price": "270.00",
+      "image": "products/caramel_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.153Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 83,
+    "fields": {
+      "shop": 9,
+      "category": 26,
+      "name": "Mocha FrappÃ©",
+      "description": "Coffee blended with chocolate.",
+      "price": "270.00",
+      "image": "products/mocha_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.158Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 84,
+    "fields": {
+      "shop": 9,
+      "category": 26,
+      "name": "Java Chip FrappÃ©",
+      "description": "Coffee, chocolate chips and ice blended together.",
+      "price": "290.00",
+      "image": "products/caramel_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.164Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 85,
+    "fields": {
+      "shop": 9,
+      "category": 26,
+      "name": "Vanilla Cream FrappÃ©",
+      "description": "Vanilla-flavoured creamy ice-blended drink.",
+      "price": "250.00",
+      "image": "products/caramel_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.167Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 86,
+    "fields": {
+      "shop": 9,
+      "category": 26,
+      "name": "Chocolate Cream FrappÃ©",
+      "description": "Chocolate and milk blended with ice.",
+      "price": "270.00",
+      "image": "products/mocha_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.173Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 87,
+    "fields": {
+      "shop": 9,
+      "category": 26,
+      "name": "Strawberry Cream FrappÃ©",
+      "description": "Strawberry-flavoured creamy blended drink.",
+      "price": "260.00",
+      "image": "products/caramel_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.177Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 88,
+    "fields": {
+      "shop": 9,
+      "category": 24,
+      "name": "Iced Brown Sugar Latte",
+      "description": "Espresso, milk and brown sugar over ice.",
+      "price": "240.00",
+      "image": "products/iced_latte.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.182Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 89,
+    "fields": {
+      "shop": 9,
+      "category": 24,
+      "name": "Iced White Mocha",
+      "description": "Iced espresso and milk with white chocolate.",
+      "price": "250.00",
+      "image": "products/iced_latte.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.186Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 90,
+    "fields": {
+      "shop": 9,
+      "category": 28,
+      "name": "Mango Smoothie",
+      "description": "Mango blended into a cool, smooth drink.",
+      "price": "220.00",
+      "image": "products/matcha_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.191Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 91,
+    "fields": {
+      "shop": 9,
+      "category": 30,
+      "name": "Chocolate Chip Cookie",
+      "description": "Cookie with chocolate chips.",
+      "price": "100.00",
+      "image": "products/mocha_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.196Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 92,
+    "fields": {
+      "shop": 9,
+      "category": 30,
+      "name": "Chocolate Brownie",
+      "description": "Rich chocolate brownie square.",
+      "price": "150.00",
+      "image": "products/mocha_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.200Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 93,
+    "fields": {
+      "shop": 10,
+      "category": 31,
+      "name": "Matcha Green Tea Latte",
+      "description": "Smooth matcha with milk, served hot or iced.",
+      "price": "230.00",
+      "image": "products/matcha_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.338Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 94,
+    "fields": {
+      "shop": 10,
+      "category": 31,
+      "name": "Chai Tea Latte",
+      "description": "Spiced tea blended with steamed milk.",
+      "price": "190.00",
+      "image": "products/matcha_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.344Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 95,
+    "fields": {
+      "shop": 10,
+      "category": 31,
+      "name": "English Breakfast Tea",
+      "description": "Classic black tea served hot.",
+      "price": "130.00",
+      "image": "products/matcha_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.349Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 96,
+    "fields": {
+      "shop": 10,
+      "category": 31,
+      "name": "Mint Citrus Tea",
+      "description": "Refreshing tea with mint and citrus notes.",
+      "price": "160.00",
+      "image": "products/matcha_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.358Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 97,
+    "fields": {
+      "shop": 10,
+      "category": 28,
+      "name": "Strawberry Acai-Style Refresher",
+      "description": "Fruit-forward iced refresher; independent menu item.",
+      "price": "220.00",
+      "image": "products/matcha_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.362Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 98,
+    "fields": {
+      "shop": 10,
+      "category": 28,
+      "name": "Mango Dragonfruit-Style Refresher",
+      "description": "Bright tropical fruit refresher served chilled.",
+      "price": "230.00",
+      "image": "products/matcha_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.366Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 99,
+    "fields": {
+      "shop": 10,
+      "category": 23,
+      "name": "Classic Milk Bubble Tea",
+      "description": "Milk tea with chewy tapioca pearls.",
+      "price": "210.00",
+      "image": "products/matcha_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.372Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 100,
+    "fields": {
+      "shop": 10,
+      "category": 23,
+      "name": "Brown Sugar Bubble Tea",
+      "description": "Milk tea with brown sugar syrup and pearls.",
+      "price": "240.00",
+      "image": "products/matcha_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.376Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 101,
+    "fields": {
+      "shop": 10,
+      "category": 23,
+      "name": "Mango Bubble Tea",
+      "description": "Mango tea with tapioca pearls.",
+      "price": "220.00",
+      "image": "products/matcha_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.381Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 102,
+    "fields": {
+      "shop": 10,
+      "category": 31,
+      "name": "Iced Matcha Latte",
+      "description": "Matcha and milk served over ice.",
+      "price": "240.00",
+      "image": "products/matcha_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.385Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 103,
+    "fields": {
+      "shop": 10,
+      "category": 25,
+      "name": "Tomato Mozzarella Sandwich",
+      "description": "Toasted sandwich with tomato, cheese and herbs.",
+      "price": "240.00",
+      "image": "products/sandwich.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.390Z"
+    }
+  },
+  {
+    "model": "marketplace.product",
+    "pk": 104,
+    "fields": {
+      "shop": 10,
+      "category": 30,
+      "name": "Potato & Cheese Puff",
+      "description": "Crisp savoury puff with potato and cheese.",
+      "price": "130.00",
+      "image": "products/mocha_frappe.jpg",
+      "available": true,
+      "created_at": "2026-10-29T15:34:12.394Z"
+    }
+  },
+  {
+    "model": "marketplace.offer",
+    "pk": 7,
+    "fields": {
+      "shop": 7,
+      "title": "First Sip",
+      "description": "15% off selected coffee drinks (demo promotion).",
+      "discount_percent": 15,
+      "active": true,
+      "ends_at": null,
+      "created_at": "2026-10-29T15:34:11.826Z"
+    }
+  },
+  {
+    "model": "marketplace.offer",
+    "pk": 8,
+    "fields": {
+      "shop": 8,
+      "title": "Daily Coffee Deal",
+      "description": "10% off selected brewed coffee (demo promotion).",
+      "discount_percent": 10,
+      "active": true,
+      "ends_at": null,
+      "created_at": "2026-10-29T15:34:12.019Z"
+    }
+  },
+  {
+    "model": "marketplace.offer",
+    "pk": 9,
+    "fields": {
+      "shop": 9,
+      "title": "Blended Bliss",
+      "description": "12% off selected blended drinks (demo promotion).",
+      "discount_percent": 12,
+      "active": true,
+      "ends_at": null,
+      "created_at": "2026-10-29T15:34:12.207Z"
+    }
+  },
+  {
+    "model": "marketplace.offer",
+    "pk": 10,
+    "fields": {
+      "shop": 10,
+      "title": "Tea Time",
+      "description": "10% off selected teas and refreshers (demo promotion).",
+      "discount_percent": 10,
+      "active": true,
+      "ends_at": null,
+      "created_at": "2026-10-29T15:34:12.402Z"
+    }
   }
-},
-{
-  "model": "auth.user",
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$xg2dKER5n1IXS8xF738cXq$MjSQeKI2lKOWZWhgrsjiGxGNS82qom31irrqVAT77j4=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "demo_customer",
-    "first_name": "",
-    "last_name": "",
-    "email": "customer@example.test",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2026-10-28T04:34:11.431Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "auth.user",
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$L5MFKawJqHXRTRaEp2nCKM$hrkmVDmuYoVxkyEUYekTe7JSmAXTlyUsKPzgC9Wv44o=",
-    "last_login": null,
-    "is_superuser": true,
-    "username": "pratham",
-    "first_name": "",
-    "last_name": "",
-    "email": "paramverma835@gmail.com",
-    "is_staff": true,
-    "is_active": true,
-    "date_joined": "2026-10-28T04:34:56.223Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "auth.user",
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$piVBtVxeJTJJ1hGbHPi3z3$tZQOBBhzF86R77sAhKk3mkjaGhwh2mWBpucmK/oftTQ=",
-    "last_login": "2026-10-28T04:36:10.991Z",
-    "is_superuser": false,
-    "username": "prathamverma",
-    "first_name": "",
-    "last_name": "",
-    "email": "kakakak@gmail.com",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2026-10-28T04:36:10.847Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "auth.user",
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$I6YCAbzip1EyO2M1JgIKKd$8YoxBUVHnyLdOFyxY+iz/7vniKfYalJBWsndYdrumeo=",
-    "last_login": "2026-10-28T06:17:32.782Z",
-    "is_superuser": false,
-    "username": "bakery4u",
-    "first_name": "",
-    "last_name": "",
-    "email": "bakery4u@gmail.com",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2026-10-28T06:17:32.638Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "auth.user",
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$m9XKVs6OfFMAx3FSpDaeND$yLE+8QbyUUqWDHQBl2zOze7sOA3b7FBS/u9tbfr0tEk=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "demo_roastroom",
-    "first_name": "",
-    "last_name": "",
-    "email": "roastroom@example.test",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2026-10-29T13:32:19.048Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "auth.user",
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$noXFtIbP0STfvvaKTPZZwH$4wF1mQZaBVRP6gnuoUTyKJu37fhupyWqrYPcRBieCeA=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "demo_bubblebay",
-    "first_name": "",
-    "last_name": "",
-    "email": "bubblebay@example.test",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2026-10-29T13:32:19.231Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "auth.user",
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$J4BRmasUNUlHetiOLrbtCW$TVeO2Vko5s45s5NTbVLQmZD10j/tK5qwdm3O4+j2SmU=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "demo_mocha",
-    "first_name": "",
-    "last_name": "",
-    "email": "mochahouse@example.test",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2026-10-29T13:32:19.433Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "auth.user",
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$L7o5ypp8IfbIw4ZYVPXjpe$i1jr5CGHXejJqiFgDLd93Ml6FOZCFzvz3zUA6KHuTvU=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "demo_cafecorner",
-    "first_name": "",
-    "last_name": "",
-    "email": "cornercup@example.test",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2026-10-29T13:32:19.628Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "auth.user",
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$2QB9wGKubkdPqzOyzIRQVt$DIHklvE6PK6x4955Vn9BLYI1V7/WEyKrnuEU2E8sQ4o=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "demo_cafe_reserve",
-    "first_name": "",
-    "last_name": "",
-    "email": "reserve@example.test",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2026-10-29T15:34:11.621Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "auth.user",
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$hydYg68DMkzq2N8V8Ewzzp$id9Cn/fXb1oXg/l8TYSbjy2qjllnhDFsPWx6kVeu0XU=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "demo_daily_grind",
-    "first_name": "",
-    "last_name": "",
-    "email": "dailygrind@example.test",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2026-10-29T15:34:11.831Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "auth.user",
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$yzk12yBk3j1hOdarkEVUI4$FITi9+PQLH3n8rNFaYB1gjbiRZ4wDLe1Q0CM+gNp9R0=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "demo_frappe_house",
-    "first_name": "",
-    "last_name": "",
-    "email": "frappehouse@example.test",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2026-10-29T15:34:12.024Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "auth.user",
-  "fields": {
-    "password": "pbkdf2_sha256$1000000$OjNOogHvQRdCG1Tw94r5lV$h+Bluqnf2sP1Zg/o5Tz/+0S5DJuPlHtYQeWc1tTwUAc=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "demo_boba_brew",
-    "first_name": "",
-    "last_name": "",
-    "email": "bobabrew@example.test",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2026-10-29T15:34:12.212Z",
-    "groups": [],
-    "user_permissions": []
-  }
-},
-{
-  "model": "marketplace.shop",
-  "pk": 7,
-  "fields": {
-    "owner": [
-      "demo_cafe_reserve"
-    ],
-    "name": "Café Reserve",
-    "description": "A premium coffee bar for espresso classics, signature lattes, cold brew and café sandwiches.",
-    "address": "Model Town, Ludhiana",
-    "phone": "9876543210",
-    "logo": "shop_logos/cafe_reserve.jpg",
-    "created_at": "2026-10-29T15:34:11.747Z"
-  }
-},
-{
-  "model": "marketplace.shop",
-  "pk": 8,
-  "fields": {
-    "owner": [
-      "demo_daily_grind"
-    ],
-    "name": "Daily Grind Café",
-    "description": "Your everyday stop for brewed coffee, refreshing iced drinks, teas and quick savoury bites.",
-    "address": "Sarabha Nagar, Ludhiana",
-    "phone": "9876543211",
-    "logo": "shop_logos/daily_grind.jpg",
-    "created_at": "2026-10-29T15:34:11.951Z"
-  }
-},
-{
-  "model": "marketplace.shop",
-  "pk": 9,
-  "fields": {
-    "owner": [
-      "demo_frappe_house"
-    ],
-    "name": "Frappé House",
-    "description": "Blended coffee, creamy frappés, iced refreshers and sweet café treats.",
-    "address": "Feroze Gandhi Market, Ludhiana",
-    "phone": "9876543212",
-    "logo": "shop_logos/frappe_house.jpg",
-    "created_at": "2026-10-29T15:34:12.141Z"
-  }
-},
-{
-  "model": "marketplace.shop",
-  "pk": 10,
-  "fields": {
-    "owner": [
-      "demo_boba_brew"
-    ],
-    "name": "Boba & Brew Café",
-    "description": "A modern tea and coffee spot for matcha, iced tea, refreshers, bubble tea and light bites.",
-    "address": "BRS Nagar, Ludhiana",
-    "phone": "9876543213",
-    "logo": "shop_logos/boba_brew.jpg",
-    "created_at": "2026-10-29T15:34:12.331Z"
-  }
-},
-{
-  "model": "marketplace.category",
-  "pk": 21,
-  "fields": {
-    "name": "Bakery Snacks",
-    "slug": "bakery-snacks"
-  }
-},
-{
-  "model": "marketplace.category",
-  "pk": 22,
-  "fields": {
-    "name": "Brewed Coffee",
-    "slug": "brewed-coffee"
-  }
-},
-{
-  "model": "marketplace.category",
-  "pk": 23,
-  "fields": {
-    "name": "Bubble Tea",
-    "slug": "bubble-tea"
-  }
-},
-{
-  "model": "marketplace.category",
-  "pk": 24,
-  "fields": {
-    "name": "Cold Coffee",
-    "slug": "cold-coffee"
-  }
-},
-{
-  "model": "marketplace.category",
-  "pk": 25,
-  "fields": {
-    "name": "Food",
-    "slug": "food"
-  }
-},
-{
-  "model": "marketplace.category",
-  "pk": 26,
-  "fields": {
-    "name": "Frappés",
-    "slug": "frappés"
-  }
-},
-{
-  "model": "marketplace.category",
-  "pk": 27,
-  "fields": {
-    "name": "Hot Coffee",
-    "slug": "hot-coffee"
-  }
-},
-{
-  "model": "marketplace.category",
-  "pk": 28,
-  "fields": {
-    "name": "Refreshers",
-    "slug": "refreshers"
-  }
-},
-{
-  "model": "marketplace.category",
-  "pk": 29,
-  "fields": {
-    "name": "Signature Coffee",
-    "slug": "signature-coffee"
-  }
-},
-{
-  "model": "marketplace.category",
-  "pk": 30,
-  "fields": {
-    "name": "Snacks",
-    "slug": "snacks"
-  }
-},
-{
-  "model": "marketplace.category",
-  "pk": 31,
-  "fields": {
-    "name": "Tea & Matcha",
-    "slug": "tea-and-matcha"
-  }
-},
-{
-  "model": "marketplace.category",
-  "pk": 32,
-  "fields": {
-    "name": "Tea & Refreshers",
-    "slug": "tea-and-refreshers"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 57,
-  "fields": {
-    "shop": 7,
-    "category": 27,
-    "name": "Espresso",
-    "description": "Rich espresso with a smooth crema.",
-    "price": "110.00",
-    "image": "products/espresso.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:11.752Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 58,
-  "fields": {
-    "shop": 7,
-    "category": 27,
-    "name": "Caffè Americano",
-    "description": "Espresso balanced with hot water.",
-    "price": "140.00",
-    "image": "products/espresso.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:11.763Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 59,
-  "fields": {
-    "shop": 7,
-    "category": 27,
-    "name": "Cappuccino",
-    "description": "Espresso, steamed milk and airy foam.",
-    "price": "180.00",
-    "image": "products/cappuccino.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:11.770Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 60,
-  "fields": {
-    "shop": 7,
-    "category": 27,
-    "name": "Caffè Latte",
-    "description": "Espresso with silky steamed milk.",
-    "price": "190.00",
-    "image": "products/latte.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:11.775Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 61,
-  "fields": {
-    "shop": 7,
-    "category": 27,
-    "name": "Flat White",
-    "description": "Espresso with finely textured milk.",
-    "price": "200.00",
-    "image": "products/latte.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:11.781Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 62,
-  "fields": {
-    "shop": 7,
-    "category": 29,
-    "name": "Caramel Macchiato",
-    "description": "Vanilla milk, espresso and caramel drizzle.",
-    "price": "240.00",
-    "image": "products/caramel_macchiato.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:11.789Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 63,
-  "fields": {
-    "shop": 7,
-    "category": 29,
-    "name": "Caffè Mocha",
-    "description": "Espresso, chocolate and steamed milk.",
-    "price": "230.00",
-    "image": "products/mocha_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:11.793Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 64,
-  "fields": {
-    "shop": 7,
-    "category": 29,
-    "name": "Vanilla Latte",
-    "description": "Classic latte with vanilla flavour.",
-    "price": "220.00",
-    "image": "products/latte.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:11.799Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 65,
-  "fields": {
-    "shop": 7,
-    "category": 24,
-    "name": "Cold Brew",
-    "description": "Slow-steeped coffee served over ice.",
-    "price": "210.00",
-    "image": "products/cold_brew.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:11.804Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 66,
-  "fields": {
-    "shop": 7,
-    "category": 24,
-    "name": "Iced Americano",
-    "description": "Espresso and chilled water over ice.",
-    "price": "160.00",
-    "image": "products/espresso.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:11.810Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 67,
-  "fields": {
-    "shop": 7,
-    "category": 25,
-    "name": "Classic Grilled Cheese Sandwich",
-    "description": "Toasted bread with melted cheese.",
-    "price": "190.00",
-    "image": "products/sandwich.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:11.814Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 68,
-  "fields": {
-    "shop": 7,
-    "category": 25,
-    "name": "Spinach & Corn Sandwich",
-    "description": "Grilled sandwich with spinach, corn and cheese.",
-    "price": "210.00",
-    "image": "products/sandwich.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:11.820Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 69,
-  "fields": {
-    "shop": 8,
-    "category": 22,
-    "name": "Pike-Style Brewed Coffee",
-    "description": "Balanced medium-roast brewed coffee; independently named menu item.",
-    "price": "130.00",
-    "image": "products/latte.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:11.956Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 70,
-  "fields": {
-    "shop": 8,
-    "category": 22,
-    "name": "Caffè Misto",
-    "description": "Fresh brewed coffee topped with steamed milk.",
-    "price": "160.00",
-    "image": "products/iced_latte.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:11.960Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 71,
-  "fields": {
-    "shop": 8,
-    "category": 27,
-    "name": "Cortado",
-    "description": "Espresso softened with a small amount of warm milk.",
-    "price": "170.00",
-    "image": "products/espresso.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:11.965Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 72,
-  "fields": {
-    "shop": 8,
-    "category": 27,
-    "name": "Hazelnut Latte",
-    "description": "Espresso and steamed milk with hazelnut flavour.",
-    "price": "220.00",
-    "image": "products/latte.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:11.969Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 73,
-  "fields": {
-    "shop": 8,
-    "category": 29,
-    "name": "White Chocolate Mocha",
-    "description": "Espresso with white chocolate and steamed milk.",
-    "price": "250.00",
-    "image": "products/mocha_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:11.974Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 74,
-  "fields": {
-    "shop": 8,
-    "category": 24,
-    "name": "Iced Latte",
-    "description": "Espresso and milk served chilled.",
-    "price": "200.00",
-    "image": "products/iced_latte.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:11.980Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 75,
-  "fields": {
-    "shop": 8,
-    "category": 24,
-    "name": "Vanilla Sweet Cream Cold Brew",
-    "description": "Cold brew with a lightly sweet cream topping.",
-    "price": "240.00",
-    "image": "products/cold_brew.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:11.986Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 76,
-  "fields": {
-    "shop": 8,
-    "category": 32,
-    "name": "Iced Peach Tea",
-    "description": "Chilled tea with peach flavour.",
-    "price": "170.00",
-    "image": "products/iced_latte.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:11.992Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 77,
-  "fields": {
-    "shop": 8,
-    "category": 32,
-    "name": "Matcha Latte",
-    "description": "Green tea matcha blended with milk.",
-    "price": "230.00",
-    "image": "products/matcha_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:11.998Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 78,
-  "fields": {
-    "shop": 8,
-    "category": 32,
-    "name": "Hot Chocolate",
-    "description": "Creamy chocolate drink topped with foam.",
-    "price": "190.00",
-    "image": "products/mocha_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.004Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 79,
-  "fields": {
-    "shop": 8,
-    "category": 25,
-    "name": "Paneer Tikka Sandwich",
-    "description": "Toasted sandwich with paneer tikka filling.",
-    "price": "230.00",
-    "image": "products/sandwich.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.009Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 80,
-  "fields": {
-    "shop": 8,
-    "category": 21,
-    "name": "Butter Croissant",
-    "description": "Flaky, buttery croissant.",
-    "price": "140.00",
-    "image": "products/croissant.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.013Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 81,
-  "fields": {
-    "shop": 9,
-    "category": 26,
-    "name": "Coffee Frappé",
-    "description": "Ice-blended coffee with a creamy finish.",
-    "price": "250.00",
-    "image": "products/caramel_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.147Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 82,
-  "fields": {
-    "shop": 9,
-    "category": 26,
-    "name": "Caramel Frappé",
-    "description": "Blended coffee with caramel flavour and drizzle.",
-    "price": "270.00",
-    "image": "products/caramel_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.153Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 83,
-  "fields": {
-    "shop": 9,
-    "category": 26,
-    "name": "Mocha Frappé",
-    "description": "Coffee blended with chocolate.",
-    "price": "270.00",
-    "image": "products/mocha_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.158Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 84,
-  "fields": {
-    "shop": 9,
-    "category": 26,
-    "name": "Java Chip Frappé",
-    "description": "Coffee, chocolate chips and ice blended together.",
-    "price": "290.00",
-    "image": "products/caramel_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.164Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 85,
-  "fields": {
-    "shop": 9,
-    "category": 26,
-    "name": "Vanilla Cream Frappé",
-    "description": "Vanilla-flavoured creamy ice-blended drink.",
-    "price": "250.00",
-    "image": "products/caramel_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.167Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 86,
-  "fields": {
-    "shop": 9,
-    "category": 26,
-    "name": "Chocolate Cream Frappé",
-    "description": "Chocolate and milk blended with ice.",
-    "price": "270.00",
-    "image": "products/mocha_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.173Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 87,
-  "fields": {
-    "shop": 9,
-    "category": 26,
-    "name": "Strawberry Cream Frappé",
-    "description": "Strawberry-flavoured creamy blended drink.",
-    "price": "260.00",
-    "image": "products/caramel_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.177Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 88,
-  "fields": {
-    "shop": 9,
-    "category": 24,
-    "name": "Iced Brown Sugar Latte",
-    "description": "Espresso, milk and brown sugar over ice.",
-    "price": "240.00",
-    "image": "products/iced_latte.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.182Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 89,
-  "fields": {
-    "shop": 9,
-    "category": 24,
-    "name": "Iced White Mocha",
-    "description": "Iced espresso and milk with white chocolate.",
-    "price": "250.00",
-    "image": "products/iced_latte.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.186Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 90,
-  "fields": {
-    "shop": 9,
-    "category": 28,
-    "name": "Mango Smoothie",
-    "description": "Mango blended into a cool, smooth drink.",
-    "price": "220.00",
-    "image": "products/matcha_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.191Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 91,
-  "fields": {
-    "shop": 9,
-    "category": 30,
-    "name": "Chocolate Chip Cookie",
-    "description": "Cookie with chocolate chips.",
-    "price": "100.00",
-    "image": "products/mocha_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.196Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 92,
-  "fields": {
-    "shop": 9,
-    "category": 30,
-    "name": "Chocolate Brownie",
-    "description": "Rich chocolate brownie square.",
-    "price": "150.00",
-    "image": "products/mocha_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.200Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 93,
-  "fields": {
-    "shop": 10,
-    "category": 31,
-    "name": "Matcha Green Tea Latte",
-    "description": "Smooth matcha with milk, served hot or iced.",
-    "price": "230.00",
-    "image": "products/matcha_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.338Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 94,
-  "fields": {
-    "shop": 10,
-    "category": 31,
-    "name": "Chai Tea Latte",
-    "description": "Spiced tea blended with steamed milk.",
-    "price": "190.00",
-    "image": "products/matcha_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.344Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 95,
-  "fields": {
-    "shop": 10,
-    "category": 31,
-    "name": "English Breakfast Tea",
-    "description": "Classic black tea served hot.",
-    "price": "130.00",
-    "image": "products/matcha_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.349Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 96,
-  "fields": {
-    "shop": 10,
-    "category": 31,
-    "name": "Mint Citrus Tea",
-    "description": "Refreshing tea with mint and citrus notes.",
-    "price": "160.00",
-    "image": "products/matcha_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.358Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 97,
-  "fields": {
-    "shop": 10,
-    "category": 28,
-    "name": "Strawberry Acai-Style Refresher",
-    "description": "Fruit-forward iced refresher; independent menu item.",
-    "price": "220.00",
-    "image": "products/matcha_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.362Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 98,
-  "fields": {
-    "shop": 10,
-    "category": 28,
-    "name": "Mango Dragonfruit-Style Refresher",
-    "description": "Bright tropical fruit refresher served chilled.",
-    "price": "230.00",
-    "image": "products/matcha_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.366Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 99,
-  "fields": {
-    "shop": 10,
-    "category": 23,
-    "name": "Classic Milk Bubble Tea",
-    "description": "Milk tea with chewy tapioca pearls.",
-    "price": "210.00",
-    "image": "products/matcha_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.372Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 100,
-  "fields": {
-    "shop": 10,
-    "category": 23,
-    "name": "Brown Sugar Bubble Tea",
-    "description": "Milk tea with brown sugar syrup and pearls.",
-    "price": "240.00",
-    "image": "products/matcha_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.376Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 101,
-  "fields": {
-    "shop": 10,
-    "category": 23,
-    "name": "Mango Bubble Tea",
-    "description": "Mango tea with tapioca pearls.",
-    "price": "220.00",
-    "image": "products/matcha_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.381Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 102,
-  "fields": {
-    "shop": 10,
-    "category": 31,
-    "name": "Iced Matcha Latte",
-    "description": "Matcha and milk served over ice.",
-    "price": "240.00",
-    "image": "products/matcha_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.385Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 103,
-  "fields": {
-    "shop": 10,
-    "category": 25,
-    "name": "Tomato Mozzarella Sandwich",
-    "description": "Toasted sandwich with tomato, cheese and herbs.",
-    "price": "240.00",
-    "image": "products/sandwich.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.390Z"
-  }
-},
-{
-  "model": "marketplace.product",
-  "pk": 104,
-  "fields": {
-    "shop": 10,
-    "category": 30,
-    "name": "Potato & Cheese Puff",
-    "description": "Crisp savoury puff with potato and cheese.",
-    "price": "130.00",
-    "image": "products/mocha_frappe.jpg",
-    "available": true,
-    "created_at": "2026-10-29T15:34:12.394Z"
-  }
-},
-{
-  "model": "marketplace.offer",
-  "pk": 7,
-  "fields": {
-    "shop": 7,
-    "title": "First Sip",
-    "description": "15% off selected coffee drinks (demo promotion).",
-    "discount_percent": 15,
-    "active": true,
-    "ends_at": null,
-    "created_at": "2026-10-29T15:34:11.826Z"
-  }
-},
-{
-  "model": "marketplace.offer",
-  "pk": 8,
-  "fields": {
-    "shop": 8,
-    "title": "Daily Coffee Deal",
-    "description": "10% off selected brewed coffee (demo promotion).",
-    "discount_percent": 10,
-    "active": true,
-    "ends_at": null,
-    "created_at": "2026-10-29T15:34:12.019Z"
-  }
-},
-{
-  "model": "marketplace.offer",
-  "pk": 9,
-  "fields": {
-    "shop": 9,
-    "title": "Blended Bliss",
-    "description": "12% off selected blended drinks (demo promotion).",
-    "discount_percent": 12,
-    "active": true,
-    "ends_at": null,
-    "created_at": "2026-10-29T15:34:12.207Z"
-  }
-},
-{
-  "model": "marketplace.offer",
-  "pk": 10,
-  "fields": {
-    "shop": 10,
-    "title": "Tea Time",
-    "description": "10% off selected teas and refreshers (demo promotion).",
-    "discount_percent": 10,
-    "active": true,
-    "ends_at": null,
-    "created_at": "2026-10-29T15:34:12.402Z"
-  }
-}
 ]
