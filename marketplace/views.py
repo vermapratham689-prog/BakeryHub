@@ -25,9 +25,9 @@ def register(request):
         if form.is_valid():
             user = form.save()
             if form.cleaned_data['role'] == 'shop':
-                Shop.objects.create(owner=user, name=f"{user.username}'s Bakery")
+                Shop.objects.create(owner=user, name=f"{user.username}'s Café")
             login(request, user)
-            messages.success(request, 'Account created. Welcome to BakeryHub!')
+            messages.success(request, 'Account created. Welcome to CaféConnect!')
             return redirect('dashboard')
     else: form = RegisterForm()
     return render(request, 'registration/register.html', {'form': form})
@@ -65,17 +65,17 @@ def dashboard(request):
 @login_required
 def shop_profile(request):
     shop = owner_shop(request.user)
-    if not shop: return HttpResponseForbidden('Only bakery owners can edit a shop profile.')
+    if not shop: return HttpResponseForbidden('Only café owners can edit a café profile.')
     if request.method == 'POST':
         form = ShopForm(request.POST, request.FILES, instance=shop)
         if form.is_valid(): form.save(); messages.success(request,'Shop profile saved.'); return redirect('dashboard')
     else: form = ShopForm(instance=shop)
-    return render(request, 'marketplace/form_page.html', {'form':form,'title':'Edit bakery profile','button':'Save profile'})
+    return render(request, 'marketplace/form_page.html', {'form':form,'title':'Edit café profile','button':'Save profile'})
 
 @login_required
 def product_add(request):
     shop = owner_shop(request.user)
-    if not shop: return HttpResponseForbidden('Only bakery owners can add products.')
+    if not shop: return HttpResponseForbidden('Only café owners can add menu items.')
     form = ProductForm(request.POST or None, request.FILES or None)
     if request.method == 'POST' and form.is_valid():
         product = form.save(commit=False); product.shop = shop; product.save(); messages.success(request,'Product added.'); return redirect('dashboard')
@@ -137,7 +137,7 @@ def checkout(request):
     if not items: messages.info(request,'Your cart is empty.'); return redirect('shops')
     shop_ids = {i['product'].shop_id for i in items}
     if len(shop_ids) > 1:
-        messages.error(request,'For this project version, place one order per bakery. Remove products from other bakeries and try again.')
+        messages.error(request,'For this project version, place one order per café. Remove products from other bakeries and try again.')
         return redirect('cart')
     if request.method == 'POST':
         name = request.POST.get('customer_name','').strip(); phone = request.POST.get('phone','').strip(); address = request.POST.get('delivery_address','').strip(); notes = request.POST.get('notes','').strip()
@@ -163,7 +163,7 @@ def orders(request):
 @login_required
 def order_status(request, order_id):
     order = get_object_or_404(Order,pk=order_id)
-    if not order.shop.owner_id == request.user.id: return HttpResponseForbidden('Only the bakery owner can update this order.')
+    if not order.shop.owner_id == request.user.id: return HttpResponseForbidden('Only the café owner can update this order.')
     if request.method == 'POST':
         new_status = request.POST.get('status')
         if new_status in dict(Order.STATUS_CHOICES): order.status = new_status; order.save(update_fields=['status']); messages.success(request,'Order status updated.')
@@ -171,7 +171,7 @@ def order_status(request, order_id):
 
 @login_required
 def add_review(request, shop_id):
-    """Create or update the signed-in customer's review for a bakery."""
+    """Create or update the signed-in customer's review for a café."""
     shop = get_object_or_404(Shop, pk=shop_id)
     existing_review = Review.objects.filter(
         customer=request.user, shop=shop, product__isnull=True
@@ -217,3 +217,54 @@ def offer_toggle(request, offer_id):
     if offer.shop.owner_id != request.user.id: return HttpResponseForbidden('You cannot edit another shop\'s offer.')
     if request.method == 'POST': offer.active = not offer.active; offer.save(update_fields=['active'])
     return redirect('dashboard')
+
+
+@login_required
+def campaigns(request):
+    shop = owner_shop(request.user)
+    if not shop:
+        return HttpResponseForbidden('Only café owners can manage campaigns.')
+    from .models import Campaign
+    campaign_list = shop.campaigns.all()
+    return render(request, 'marketplace/campaigns.html', {'shop': shop, 'campaigns': campaign_list})
+
+
+@login_required
+def campaign_add(request):
+    shop = owner_shop(request.user)
+    if not shop:
+        return HttpResponseForbidden('Only café owners can create campaigns.')
+    from .forms import CampaignForm
+    if request.method == 'POST':
+        form = CampaignForm(request.POST)
+        if form.is_valid():
+            campaign = form.save(commit=False)
+            campaign.shop = shop
+            campaign.save()
+            messages.success(request, 'Marketing campaign created.')
+            return redirect('campaigns')
+    else:
+        form = CampaignForm()
+    return render(request, 'marketplace/form_page.html', {'form': form, 'title': 'Create marketing campaign', 'button': 'Save campaign'})
+
+
+@login_required
+def marketing_analytics(request):
+    shop = owner_shop(request.user)
+    if not shop:
+        return HttpResponseForbidden('Only café owners can view marketing analytics.')
+    from .models import MarketingEvent
+    from django.db.models import Count
+    event_counts = {row['event_type']: row['count'] for row in MarketingEvent.objects.filter(shop=shop).values('event_type').annotate(count=Count('id'))}
+    context = {
+        'shop': shop,
+        'campaign_count': shop.campaigns.count(),
+        'active_campaign_count': shop.campaigns.filter(status='Active').count(),
+        'coupon_count': shop.coupons.filter(active=True).count(),
+        'shop_views': event_counts.get('shop_view', 0),
+        'menu_views': event_counts.get('menu_view', 0),
+        'campaign_clicks': event_counts.get('campaign_click', 0),
+        'coupon_redemptions': event_counts.get('coupon_redeem', 0),
+        'events_available': MarketingEvent.objects.filter(shop=shop).exists(),
+    }
+    return render(request, 'marketplace/marketing_analytics.html', context)

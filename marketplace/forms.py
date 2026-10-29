@@ -5,7 +5,7 @@ from .models import Shop, Product, Offer, Review
 
 class RegisterForm(UserCreationForm):
     email = forms.EmailField(required=True)
-    role = forms.ChoiceField(choices=[('customer','Customer'), ('shop','Bakery owner')])
+    role = forms.ChoiceField(choices=[('customer','Customer'), ('shop','Café owner')])
     class Meta:
         model = User
         fields = ('username', 'email', 'role', 'password1', 'password2')
@@ -38,3 +38,21 @@ class ReviewForm(forms.ModelForm):
         model = Review
         fields = ['rating', 'comment']
         widgets = {'rating': forms.Select(choices=[(5,'5 - Excellent'),(4,'4 - Very good'),(3,'3 - Good'),(2,'2 - Fair'),(1,'1 - Poor')]), 'comment': forms.Textarea(attrs={'rows': 3, 'placeholder':'Share your experience'})}
+
+from .models import Campaign, Coupon
+
+class CampaignForm(forms.ModelForm):
+    class Meta:
+        model = Campaign
+        fields = ['name', 'description', 'target_audience', 'start_date', 'end_date', 'budget', 'status']
+        widgets = {
+            'start_date': forms.DateInput(attrs={'type': 'date'}),
+            'end_date': forms.DateInput(attrs={'type': 'date'}),
+            'description': forms.Textarea(attrs={'rows': 3}),
+        }
+
+class CouponForm(forms.ModelForm):
+    class Meta:
+        model = Coupon
+        fields = ['code', 'discount_type', 'discount_value', 'minimum_order', 'valid_until', 'usage_limit', 'active']
+        widgets = {'valid_until': forms.DateTimeInput(attrs={'type': 'datetime-local'})}

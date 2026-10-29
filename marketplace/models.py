@@ -70,3 +70,55 @@ class Review(models.Model):
         constraints = [models.UniqueConstraint(fields=['customer', 'shop', 'product'], name='one_review_per_customer_shop_product')]
         ordering = ['-created_at']
     def __str__(self): return f'{self.rating}/5 by {self.customer}'
+
+
+class Campaign(models.Model):
+    STATUS_CHOICES = [('Draft', 'Draft'), ('Scheduled', 'Scheduled'), ('Active', 'Active'), ('Paused', 'Paused'), ('Completed', 'Completed')]
+    shop = models.ForeignKey(Shop, on_delete=models.CASCADE, related_name='campaigns')
+    name = models.CharField(max_length=140)
+    description = models.TextField(blank=True)
+    target_audience = models.CharField(max_length=120, blank=True)
+    start_date = models.DateField()
+    end_date = models.DateField()
+    budget = models.DecimalField(max_digits=10, decimal_places=2, default=0, validators=[MinValueValidator(0)])
+    status = models.CharField(max_length=12, choices=STATUS_CHOICES, default='Draft')
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-created_at']
+        constraints = [models.CheckConstraint(condition=models.Q(end_date__gte=models.F('start_date')), name='campaign_end_after_start')]
+
+    def __str__(self):
+        return f'{self.name} — {self.shop.name}'
+
+
+class Coupon(models.Model):
+    DISCOUNT_TYPES = [('percent', 'Percentage'), ('fixed', 'Fixed amount')]
+    shop = models.ForeignKey(Shop, on_delete=models.CASCADE, related_name='coupons')
+    code = models.CharField(max_length=32)
+    discount_type = models.CharField(max_length=10, choices=DISCOUNT_TYPES, default='percent')
+    discount_value = models.DecimalField(max_digits=8, decimal_places=2, validators=[MinValueValidator(0.01)])
+    minimum_order = models.DecimalField(max_digits=9, decimal_places=2, default=0, validators=[MinValueValidator(0)])
+    valid_until = models.DateTimeField(blank=True, null=True)
+    usage_limit = models.PositiveIntegerField(default=100)
+    times_used = models.PositiveIntegerField(default=0)
+    active = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        constraints = [models.UniqueConstraint(fields=['shop', 'code'], name='unique_coupon_code_per_shop')]
+        ordering = ['-created_at']
+
+    def __str__(self):
+        return f'{self.code} — {self.shop.name}'
+
+
+class MarketingEvent(models.Model):
+    EVENT_CHOICES = [('shop_view', 'Shop view'), ('menu_view', 'Menu view'), ('campaign_click', 'Campaign click'), ('coupon_redeem', 'Coupon redemption')]
+    shop = models.ForeignKey(Shop, on_delete=models.CASCADE, related_name='marketing_events')
+    event_type = models.CharField(max_length=20, choices=EVENT_CHOICES)
+    campaign = models.ForeignKey(Campaign, on_delete=models.SET_NULL, null=True, blank=True, related_name='events')
+    created_at = models.DateTimeField(auto_now_add=True, db_index=True)
+
+    def __str__(self):
+        return f'{self.get_event_type_display()} — {self.shop.name}'

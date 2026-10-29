@@ -27,3 +27,9 @@
     line-height: 1.1;
     font-size: .72rem;
 }
+
+/* Photo-led CaféConnect upgrade */
+.hero-photo{position:relative;width:min(390px,88%);height:300px;object-fit:cover;border-radius:48% 48% 42% 42%;box-shadow:0 24px 50px rgba(81,48,28,.18);z-index:1;border:8px solid rgba(255,253,249,.82)}
+.shop-cover{background:#faeade}
+.product-img{background:#faeade}
+@media(max-width:767.98px){.hero-photo{height:235px;width:min(300px,88%)}}
