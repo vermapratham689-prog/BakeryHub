@@ -142,3 +142,24 @@ Demo café-owner accounts use usernames `demo_cafe_reserve`, `demo_roastroom`, `
 ## Café photography upgrade
 
 The demo seed command assigns bundled local café and menu images to showcase records. Run `python manage.py seed_demo` to reset the demo storefronts and populate four café showcases with coffeehouse-style menus and local image assets. This command deletes existing shop/product/order/review demo data; back up your database first. The sample menus are independently written and are not an official Starbucks menu or affiliation.
+
+## Render recovery: automatically restore the four café showcases
+
+This deployment version fixes the two causes of an empty live catalogue:
+
+1. The Render start command applies Django migrations before starting Gunicorn, avoiding errors such as `no such table: marketplace_shop`.
+2. `ensure_demo_data` safely adds or refreshes the four showcase cafés and their 48 menu items. It uses `update_or_create` and does **not** delete orders, customers, reviews, existing shops, or unrelated products. The old `seed_demo` command is now a safe alias.
+3. Café and menu showcase photos are bundled in `static/images/` and resolved through Django's static-file storage. The demo photos do not rely on Render's temporary `/media/` filesystem or on Cloudinary.
+
+### Required Render settings
+
+In **Render → your Web Service → Settings**:
+
+- **Build Command:** `bash build.sh`
+- **Start Command:** `python manage.py migrate --noinput && python manage.py ensure_demo_data && gunicorn config.wsgi:application`
+
+In **Environment**, keep the `DATABASE_URL` that belongs to the existing Render PostgreSQL database. Do not replace it with a new database; the recovery command is non-destructive. Set `DEBUG=False` and a strong `SECRET_KEY` if they are not already present.
+
+Cloudinary is not required for the bundled café/product showcase photos. For persistent images uploaded by café owners, set the environment variable named `CLOUDINARY_URL` to a valid Cloudinary URL that starts with `cloudinary://`. The value must not include the literal text `CLOUDINARY_URL=`. If a secret previously appeared in a chat or screenshot, rotate it in Cloudinary before updating Render.
+
+After saving settings, manually trigger **Manual Deploy → Deploy latest commit**. In the deploy logs, look for the `CaféConnect showcase ready: 4 cafés, 48 menu items` message. Visiting the live homepage and `/shops/` should then display the cafés and bundled photos.

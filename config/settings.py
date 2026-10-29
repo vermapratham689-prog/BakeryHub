@@ -29,7 +29,10 @@ if extra_hosts:
         host.strip() for host in extra_hosts.split(",") if host.strip()
     )
 
-CLOUDINARY_ENABLED = bool(os.environ.get("CLOUDINARY_URL", "").strip())
+CLOUDINARY_URL_VALUE = os.environ.get("CLOUDINARY_URL", "").strip()
+# A malformed CLOUDINARY_URL should not take down the entire site. Bundled demo photos
+# are served from static files; Cloudinary is only enabled for uploads with a valid URL.
+CLOUDINARY_ENABLED = CLOUDINARY_URL_VALUE.startswith("cloudinary://")
 
 INSTALLED_APPS = [
     "django.contrib.admin",

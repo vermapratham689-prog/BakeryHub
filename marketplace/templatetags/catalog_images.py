@@ -1,6 +1,7 @@
 """Template helpers for bundled demo photos that must work on local and hosted builds."""
 from pathlib import Path
 from django import template
+from django.templatetags.static import static
 
 register = template.Library()
 
@@ -20,9 +21,9 @@ def catalog_image(image_field, kind="product"):
         return ""
     name = Path(str(getattr(image_field, "name", ""))).name
     if kind == "cafe" and name in CAFE_IMAGES:
-        return f"/static/images/cafes/{name}"
+        return static(f"images/cafes/{name}")
     if kind == "product" and name in PRODUCT_IMAGES:
-        return f"/static/images/products/{name}"
+        return static(f"images/products/{name}")
     try:
         return image_field.url
     except (ValueError, AttributeError):
